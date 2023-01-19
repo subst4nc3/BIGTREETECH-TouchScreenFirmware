@@ -1,0 +1,48 @@
+{
+  "build": {
+    "core": "gd32",
+    "cpu": "cortex-m4",
+    "extra_flags": "-DGD32F3 -DGD32F305 -DGD32F30x -DGD32F30X_CL",
+    "f_cpu": "120000000L",
+    "mcu": "gd32f305vct6",
+    "spl_series": "GD32F30x",
+    "series": "GD32F305",
+    "spl_sub_series": "CL"
+  },
+  "debug": {
+    "jlink_device": "GD32F305VC",
+    "openocd_target": "stm32f2x",
+    "svd_path": "GD32F30x_CL.svd",
+    "default_tools": [
+      "stlink"
+    ],
+    "openocd_extra_pre_target_args": [
+      "-c",
+      "set CPUTAPID 0"
+    ]
+  },
+  "frameworks": [
+    "arduino",
+    "spl"
+  ],
+  "name": "GD32F305VC (48k RAM, 256k - 12K Flash)",
+  "upload": {
+    "disable_flushing": false,
+    "maximum_ram_size": 49152,
+    "maximum_size": 249856,
+    "protocol": "cmsis-dap",
+    "protocols": [
+      "jlink",
+      "cmsis-dap",
+      "stlink",
+      "blackmagic",
+      "sipeed-rv-debugger",
+      "serial"
+    ],
+    "require_upload_port": true,
+    "use_1200bps_touch": false,
+    "wait_for_upload_port": false
+  },
+  "url": "https://www.gigadevice.com/microcontroller/gd32f305vct6/",
+  "vendor": "GigaDevice"
+}
