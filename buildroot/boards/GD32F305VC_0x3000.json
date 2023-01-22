@@ -25,10 +25,10 @@
     "arduino",
     "spl"
   ],
-  "name": "GD32F305VC (48k RAM, 256k - 12K Flash)",
+  "name": "GD32F305VC (96k RAM, 256k - 12K Flash)",
   "upload": {
     "disable_flushing": false,
-    "maximum_ram_size": 49152,
+    "maximum_ram_size": 98304,
     "maximum_size": 249856,
     "protocol": "cmsis-dap",
     "protocols": [
